@@ -1,4 +1,9 @@
 <template name="home">
+  <form>
+    <label for="name">Channel name:</label>
+    <input id="name" type="text">
+    <button type="submit">Add</button>
+  </form>
   <ul>
     {{#each channels}}
     <li>{{name}}</li>
