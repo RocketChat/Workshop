@@ -1,3 +1,5 @@
 Meteor.publish('channels', function() {
-  return Channels.find();
+  if (this.userId) {
+    return Channels.find();
+  }
 });
